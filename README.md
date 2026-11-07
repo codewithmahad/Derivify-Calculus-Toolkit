@@ -1,18 +1,16 @@
 <h1 align="center">Derivify: The Calculus Toolkit</h1>
 
 <p align="center">
-<a href="https://github.com/mahad2006/Derivify-Calculus-Toolkit/releases/latest"><img src="https://img.shields.io/github/v/release/mahad2006/Derivify-Calculus-Toolkit?style=for-the-badge&label=Latest%20Release"></a><a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge"></a><a href="https://developer.android.com/jetpack/compose"><img src="https://img.shields.io/badge/Jetpack%20Compose-UI-blue?style=for-the-badge&logo=android"></a><a href="https://kotlinlang.org/"><img src="https://img.shields.io/badge/Kotlin-100%25-orange?style=for-the-badge&logo=kotlin"></a>
+<a href="https://github.com/codewithmahad/Derivify-Calculus-Toolkit/releases/latest"><img src="https://img.shields.io/github/v/release/codewithmahad/Derivify-Calculus-Toolkit?style=for-the-badge&label=Latest%20Release"></a><a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge"></a><a href="https://developer.android.com/jetpack/compose"><img src="https://img.shields.io/badge/Jetpack%20Compose-UI-blue?style=for-the-badge&logo=android"></a><a href="https://kotlinlang.org/"><img src="https://img.shields.io/badge/Kotlin-100%25-orange?style=for-the-badge&logo=kotlin"></a>
 </p>
 
 <p align="center">
-  A modern Android toolkit for mastering calculus — built with Kotlin, Jetpack Compose, and a custom symbolic math engine.
+  An Android calculus toolkit built with Kotlin, Jetpack Compose, and a custom symbolic differentiation engine.
 </p>
 
 ---
 
-This project began as a final assignment for my second-semester **Multi-Variable Calculus** course. The requirement was to build something related to our curriculum, but I saw it as an opportunity to build a truly useful, high-quality tool for other students.
-
-**Derivify** is the result: a native Android application designed to be an all-in-one toolkit for university-level calculus. It's not just a calculator; it's a learning companion built with a modern tech stack—100% Kotlin and Jetpack Compose.
+I built **Derivify** for my second-semester **Multi-Variable Calculus** course at UBIT. It brings together partial derivatives, gradients, and calculus quizzes in a native Android app, with a symbolic differentiation engine written in Kotlin.
 
 ## 📱 Application Showcase
 
@@ -23,28 +21,27 @@ This project began as a final assignment for my second-semester **Multi-Variable
 
 ## Features
 
-The app is built around two core ideas: providing powerful tools for solving problems and offering an interactive way to practice and test your knowledge.
+The app combines calculus calculations with practice questions.
 
 ### The Calculators
-Derivify can handle a range of complex multi-variable calculus operations:
+The implemented calculators cover:
 
 * **Partial Derivatives:** Solves partial derivatives for functions with multiple variables.
-* **Gradients:** Instantly finds the gradient vector `∇f` of a function.
-* **Directional Derivatives:** Calculates the rate of change in the direction of a given vector.
+* **Gradients:** Finds the gradient vector `∇f` of a function.
+
+Directional derivatives appear in the navigation, but that screen is still marked as in progress.
 
 ### The Calculus Quiz
-To move beyond simple calculation, I built an interactive quiz feature with a large, university-level question bank. It’s designed to genuinely test your understanding, not just your memorization.
-
-It features four difficulty levels:
+The quiz contains calculus questions grouped into four difficulty levels.
 
 * **Easy:** A review of foundational rules (Power Rule, Product Rule, etc.).
 * **Medium:** A mix of chain rules, implicit differentiation, and inverse trig.
 * **Hard:** Multi-variable topics like partial derivatives and gradients.
-* **Nightmare:** A true challenge — mixed partials, directional derivatives, and more.
+* **Nightmare:** Mixed partials, directional derivatives, and other advanced questions.
 
 ## 🏗️ How It's Built
 
-This project was an exercise in building a modern, robust Android application from the ground up.
+The UI and calculation state are separated through ViewModels.
 
 * **Language:** 100% **Kotlin**
 * **User Interface:** **Jetpack Compose** with **Material 3** for a fully declarative, modern UI
@@ -55,7 +52,7 @@ This project was an exercise in building a modern, robust Android application fr
 The core of this application is a **custom-built symbolic differentiation engine**. Instead of relying on external libraries, this engine:
 1.  **Parses** user-input functions into an Abstract Syntax Tree (AST).
 2.  **Recursively applies** calculus rules (Power, Product, Chain Rule, etc.) to the tree.
-3.  **Generates** an exact, analytical derivative, not a numerical approximation.
+3.  **Generates** symbolic derivative expressions for the functions supported by the engine.
 
 ### Built With
 <p align="center">
@@ -69,46 +66,42 @@ The core of this application is a **custom-built symbolic differentiation engine
 
 The latest installable `.apk` file is available on the **Releases** page.
 
-1.  Navigate to the [**Latest Release**](https://github.com/mahad2006/Derivify-Calculus-Toolkit/releases/latest)
+1.  Navigate to the [**Latest Release**](https://github.com/codewithmahad/Derivify-Calculus-Toolkit/releases/latest)
 2.  Under **Assets**, download the `app-release.apk` file
 3.  Open it on your Android device (enable *Install from Unknown Sources* if prompted)
 
 ## 🛠️ Building from Source
 
-Interested in building the app yourself or contributing?
+To run this archived project locally:
 
 1.  Clone the repository:
     ```bash
-    git clone [https://github.com/mahad2006/Derivify-Calculus-Toolkit.git](https://github.com/mahad2006/Derivify-Calculus-Toolkit.git)
+    git clone https://github.com/codewithmahad/Derivify-Calculus-Toolkit.git
     ```
-2.  Open the project in Android Studio (Hedgehog or newer).
+2.  Open the repository root in Android Studio, using a version compatible with the checked-in Android Gradle Plugin.
 3.  Let Gradle sync and build the project.
 4.  Run on an emulator or a physical device.
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you have a feature request, bug report, or want to contribute code, please feel free to:
-1.  Open an [issue](https://github.com/mahad2006/Derivify-Calculus-Toolkit/issues) to discuss the change.
-2.  Fork the repository and create a new branch.
-3.  Submit a pull request with your changes.
+This repository is archived and no longer accepts issues or pull requests. You can fork it to explore the code or make your own changes.
 
 ## About Me
 
-My name is **Mahad** (`codewithmahad`), and I’m a software developer and student passionate about building practical, well-designed applications.
-This project was a joy to build — combining my academic studies with my passion for mobile development.
+I’m **Mahad** (`codewithmahad`), a software engineering student at UBIT. I’ve kept this project as a record of my Android coursework.
 
 <p align="center">
 <a href="https://www.linkedin.com/in/codewithmahad"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-<a href="https://github.com/mahad2006"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+<a href="https://github.com/codewithmahad"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
 </p>
 
 ## 📜 License
 
-This project is licensed under the **MIT License**.
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
 <p align="center">
   <b>Developed with ❤️ by <a href="https://www.linkedin.com/in/codewithmahad">Shaikh Mahad</a></b> <br>
-  <sub>© 2025 Derivify — All rights reserved.</sub>
+  <sub>© 2025 Shaikh Mahad · MIT License.</sub>
 </p>
